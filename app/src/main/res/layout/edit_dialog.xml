@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edt_editDialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/edt_style"
+            android:hint="عنوان یادداشت"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/edt_editDialog_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_editDialog_title"
+            android:layout_margin="8dp"
+            android:background="@drawable/edt_style"
+            android:hint="توضیحات"
+            android:padding="8dp" />
+
+
+        <LinearLayout
+            android:layout_below="@+id/edt_editDialog_desc"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_editDialog_cancel"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_editDialog_desc"
+                android:layout_margin="8dp"
+                android:background="@drawable/btnshow_style"
+                android:text="انصراف"
+                android:textColor="@color/white" />
+            <Button
+                android:id="@+id/btn_editDialog_update"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_editDialog_desc"
+                android:layout_alignParentRight="true"
+                android:layout_margin="8dp"
+                android:background="@drawable/btnshow_style"
+                android:text="به روز رسانی"
+                android:textColor="@color/white" />
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
